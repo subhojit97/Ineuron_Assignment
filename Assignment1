@@ -1,0 +1,131 @@
+A1: We recognise Python as a general purpose and high-level programming language because :
+    * python is the most popular programming language which we can use in several areas 
+	  such as data science, artificial intelligence, machine learning, web development,etc
+	  a general-purpose language is a kind of computer language, that can be used in numerous
+	  areas and several kinds of works can be done with the help of these programming languages.
+	* Python is also a High-Level Programming Language because:
+	  1. Python is simple to use with an easy and appealing syntax
+	  2. Python runs on any forum or and is compatible with 21 platform including unix,linux etc.
+	  3. Python has Extensive standard library i.e provides large standard libraries covering vast topics
+	  4. python is simple to learn and to use for newcomers
+	  5. Python is the go-to language for rapid growth and critical technologies like machine learning and artificial intelligence.
+
+A2: Python is called a dynamically typed language because:
+    We don't have to declare the type of a variable or manage the memory while assigning a value to a variable in Python.
+	Other languages like C, C++,Java, etc.., there is a strict declaration of variables before assigning values to them.
+
+A3: Python Pros :
+    Beginner-friendly
+    Large Community
+    Flexible and Extensible
+    Extensive Libraries
+    Embeddable
+    Highly Scalable
+	
+    Python Cons:
+    Slower than compiled languages
+    High memory consumption	
+	Complex multithreading
+	Garbage collection leads to potential memory losses
+	Security
+	
+A4: Python is applicable in :
+    1. Data Science
+	2. Automation
+	3. Application Development 
+	4. AI & Machine Learning 
+	5. Audio/Video Applications ex: spotify
+	6. Console Applications
+	7. Desktop GUI
+	
+A5: Python has no command for declaring a variable.
+    A variable is created the moment you first assign a value to it.
+	Variables do not need to be declared with any particular type, and can even change type after they have been set.
+	
+A6: Syntax:
+    a=input("Enter your name")
+
+A7: By default input() function helps in taking user input as string. If any user wants to take input as int or float, we just need to typecast it.
+
+A8: in Python, typecast is nothing but Explicit Type Conversion, where we use predefined Python functions such as float (), str (), int (), etc, 
+    to convert an object’s data type from its original data type to our required data type
+
+A9: yes,by separating the input by space and using split function
+    Sysntax:
+	a,b=input(Enter two characters separated by space:').split()
+	
+A10: Python has a set of keywords that are reserved words that cannot be used as variable names, function names, or any other identifiers.
+
+A11: NO,
+     For example or is a reserved keyword in python which is a logical operatorand is used 
+	 for that specific function now if i assing or=5 it will cause a syntax error when we execute the program.
+
+A12: Indentation refers to implementing proper spaces and tabs at starting any statement, method and block of code 
+     in the python programming language.Due to these indentations, we can easily identify the beginning point and at the endpoint 
+	 of any conditional loop, functions, if-else statements and so on.
+	 
+A13: print() function is used for printing output in python
+
+A14: Python Operators in general are used to perform operations on values and variables. These are standard symbols used for the purpose of 
+     logical and arithmetic operations.
+	 Types of Operators in Python are:
+	 Arithmetic Operators
+	 Comparison Operators
+	 Logical Operators
+	 Bitwise Operators
+	 Assignment Operators 
+	 Identity Operators
+	 Membership Operators
+	 
+A15: /	Division (float): divides the first operand by the second -gives a float value.
+     //	Division (floor): divides the first operand by the second -gives a rounded value to lower number.
+
+A16: print("```\niNeuroniNeuroniNeuroniNeuron\n```")
+
+A17: a=int(input("Enter a number"))
+     if a%2==0:
+         print("even")
+     else:
+         print("odd")
+		 
+A18: and,or,not these three operators are known as boolean operator in python.These operators connect Boolean expressions (and objects) 
+     to create compound Boolean expressions.
+	 
+A19: 1 or 0  output- 1
+     0 and 0 outout- 0
+	 True and False and True output - False
+	 1 or 0 or 0 output - 1
+	 
+A20: Conditional statements are series of condition that are apllied or are in place and if  a condition is satisfied that particular block of code
+     executes to produce a result three conditional statement keyword are if,elif,else.
+	 
+A21: The simplest and most used conditional statement in Python is the "if " statement. A lot of the times, you have to decide whether to do "A " or do "B ". 
+     The "if " statement, as its name suggests evaluates the expression.
+	 Else conditional statement is a simple response to the "if " conditional statement such as if this does not happen what else would? Therefore, 
+	 whenever the "if " statement returns False and conditional block from "if " skips, the conditional block from "else " executes.
+	 Elif is a rather unique term as other programming languages don’t use it. Other programming languages use "else if " to put up one more condition. 
+	 While Python combines "else and if " and makes it an "elif " conditional statement.
+	 
+A22: age=int(input("Enter an age"))
+     if age>=18:
+        print("I can vote")
+     else:
+        print("I can't vote")
+		
+A23:numbers = [12, 75, 150, 180, 145, 525, 50]
+    sum=0
+    for i in range(len(numbers)):
+          if(numbers[i]%2==0):
+                 sum=sum+numbers[i]
+    print(sum)
+
+A24:a,b,c=input("Enter 3 numbers with space").split()
+    print(max(int(a),int(b),int(c)))
+	
+A25: numbers = [12, 75, 150, 180, 145, 525, 50]
+     for i in range(len(numbers)):
+     if(numbers[i]>500):
+         break
+     if(numbers[i]%5==0 and numbers[i]<=150):
+         print(numbers[i])
+
