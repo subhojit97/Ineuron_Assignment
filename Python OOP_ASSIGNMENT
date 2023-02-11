@@ -1,0 +1,195 @@
+1. The primary purpose of Python's object-oriented programming is to provide a way to organize and structure your code
+   in a logical and modular manner. OOP allows you to define classes, which are templates for creating objects.These objects 
+   can be used to represent real-world entities or abstract concepts, and they can contain both data and behavior. It also provides
+   code reuseability
+
+2. An inheritance search looks for an attribute first in the instance object, then in the class the instance was created from, then in
+   all higher superclasses, progressing from left to right (by default). The search stops at the first place the attribute is found.
+
+3. Classes can be understood as blueprints or templates for objects. They define a structure for storing the data related to a particular 
+   type of objects.When we create an object based on a class, we “copy” the datastructure defined by the class and fill in the actual
+   values that are applicable. The object that is created is called an instance of the class. 
+   
+4. The self keyword is used to represent an instance of the given class.example :
+   we have a class with a function and we create 2 objects each both have its unique feature and result if there was no self argument its
+   couldnt hold info of 2 objects.
+
+5. "__init__" is a reseved method in python classes. It is called as a constructor in object oriented terminology. This method is called when 
+    an object is created from a class and it allows the class to initialize the attributes of the class.
+
+6. class multiply:
+    def mul(self,a,b):
+        return a*b
+   c=multiply() ---> instance of class
+   print(c.mul(5,6))
+
+7. class multiply:    ----> class defination 
+    def mul(self,a,b):
+        return a*b
+   c=multiply()
+   print(c.mul(5,6))
+   
+8. class initialize:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+   class add_(initialize):
+    def addition(self):
+        return self.a+self.b
+   class multiply(initialize):
+    def mul(self):
+        return self.a*self.b
+   obj=add_(5,4)
+   obj1=multiply(3,4)
+   print("addition : ",obj.addition())
+   print("multiply : ",obj1.mul())
+   
+9. Classes in python are templates for creating objects. They contain variables and functions which define the class objects. At the same time,
+   modules are python programs that can be imported into another python program. Importing a module enables the usage of the module’s functions 
+   and variables into another program.
+   
+10. class initialize:      ----> class
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+   class add_(initialize):  ------> class
+    def addition(self):
+        return self.a+self.b
+   class multiply(initialize):  ------> class
+    def mul(self):
+        return self.a*self.b
+   obj=add_(5,4)   ----> instance of class(object)
+   obj1=multiply(3,4)    ----> instance of class(object)
+   print("addition : ",obj.addition())
+   print("multiply : ",obj1.mul())
+   
+11. Classes in Python are created with the keyword class, followed by the name of the class. Class attributes are defined after the class name, and
+    they are shared by all instances of the class. Individual instance attributes are defined after the class attributes, and they are unique to each 
+	instance. Method definitions are also placed after the class definition. Methods are functions that are associated with a class, and they are used 
+	to process or manipulate the data stored in instances of the class.
+
+12. In contrast to class attributes, instance attributes are not shared between objects. Every object has a duplicate of the instance attribute whereas
+    in class attributes all objects refer to a single copy.
+
+13. The self keyword is used to represent an instance of the given class.
+
+14. To perform operator overloading, Python provides some special function or magic function that is automatically invoked when it is associated with that
+    particular operator. For example, when we use + operator, the magic method __add__ is automatically invoked in which the operation for + operator is defined.
+	
+15. when we try to concatenate 2 strings or when we try to add 2 tuple
+
+16. Concatenate 2 string.
+
+17. OOPS concepts in python majorly deals with classes and objects. if we are able to understand when and how to use them we will have  a pretty
+    good grasp of the concept oop in python.
+
+18. try, except and finally are used for exception processing
+
+19. we can use else or finally with try and except if there is no exception we can use the else block code but the finally block code will always execute
+    irrespective of the exception status.
+
+20.The exceptions get raised whenever Python detects an error in a program at runtime. As a programmer, if you don't want the default behavior, then code a 
+   'try' statement to catch and recover the program from an exception. Python will jump to the 'try' handler when the program detects an error; the execution 
+    will be resumed.
+
+21. Exception Handling:
+    python works try block if any error is raised it is raised as Exception using except key word
+	
+    Assertions:
+	When it encounters an assert statement, Python evaluates the accompanying expression, which is hopefully true. If the expression is false, 
+	Python raises an AssertionError exception assert key word is used for the process
+	
+22. print statement outside try- except block and finally block are use dto print something even if there is an error
+
+23.The “try” block code will be executed statement by statement. However, if an exception occurs, the remaining “try” 
+   code will not be executed and the except clause will be executed.
+   
+24.try with one or more except block or assert block
+
+25. raise Keyword is used to raise exceptions or errors. The raise keyword raises an error and stops the control flow of the program.
+    It is used to bring up the current exception in an exception handler so that it can be handled further up the call stack.
+	
+26. we can say that assertion is the boolean expression that checks if the statement is True or False. If the statement is true then it does nothing and continues the execution,
+    but if the statement is False then it stops the execution of the program and throws an error.
+	
+27. with statement is used in exception handling to make the code cleaner and much more readable.
+    It simplifies the management of common resources like file streams.
+	
+28. *args:
+     The special syntax *args in function definitions in python is used to pass a variable number of arguments
+     to a function. It is used to pass a non-key worded, variable-length argument list.
+	 
+	 **kwargs:
+     The special syntax **kwargs in function definitions in python is used to pass a keyworded, variable-length
+     argument list. We use the name kwargs with the double star. The reason is that the double star allows us to pass
+     through keyword arguments (and any number of them).	 
+
+29.  def calc(c,k=5):
+           return c*k
+    print(calc(9))
+	
+30. Python Lambda Functions are anonymous function means that the function is without a name
+    str1="Madam"
+    palindrome= lambda string:string.upper()[::-1]
+    print(palindrome(str1))
+	
+31. class Shape(object):
+    
+    def __init__(self,name,area):
+        self.name=name
+        self.area=area
+    def display(self):
+        print(self.name,self.area)
+
+    class Square(Shape):
+            def Print(self):
+                 print("square class")
+        
+        
+    obj=Square("square",42)
+    print(obj.display())
+    print(obj.Print())
+	
+	 Inheritance is the capability of one class to derive or inherit the properties from another class.
+	 
+32. class A:
+      def test(self):
+         print("it is from A class ")
+    class B:
+       def test(self):
+           print("it is from B class ")
+     class C(A,B):
+       pass
+     obj = C()
+     obj.test() 
+
+    o/p:
+      it is from A class 
+
+     #It can be inherited another way
+    class A:
+       def test(self):
+          print("it is from A class ")
+    class B:
+       def test(self):
+           print("it is from B class ")
+    class C(B,A):
+       pass
+
+    obj = C()
+    obj.test() 
+
+    o/p:
+    it is from B class
+	
+33.The isinstance() method checks whether an object is an instance of a class whereas issubclass() 
+   method asks whether one class is a subclass of another class (or other classes).
+	
+34. The nonlocal keyword is used to work with variables inside nested functions, where the variable 
+    should not belong to the inner function.
+     Use the keyword nonlocal to declare that the variable is not local.
+
+35. The global keyword is used to create global variables from a no-global scope, e.g. inside a function.
+     Declare a global variable inside a function, and use it outside the function:
+
+	
